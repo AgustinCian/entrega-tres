@@ -1,0 +1,157 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+nav {
+	background-color: #DC999C;
+	height: 120px;
+	width: 100%;
+	ul {
+		float: right;
+		margin-right: 20px;
+		li {
+			display: inline-block;
+			line-height: 110px;
+			margin: 0 20px;
+			a {
+				color: black;
+				font-size: 18px;
+				text-decoration: none;
+				padding: 7px 13px;
+				border-radius: 3px;
+				text-transform: uppercase;
+				list-style: none;
+			}
+		}
+	}
+}
+.enlace {
+	position: absolute;
+	padding: 20px 50px;
+	padding: 0;
+}
+.logo {
+	height: 120px;
+}
+li {
+	a.active {
+		background-color: #b46d71;
+		transition: .5s;
+	}
+	a {
+		&:hover {
+			background-color: #b46d71;
+			transition: .5s;
+		}
+	}
+}
+.checkbtn {
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+body {
+	min-height: 100vh;
+	background: url(../img/fondo.jpg) no-repeat center center fixed;
+	background-size: cover;
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+.titulo-uno {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.texto-nosotros {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 20px;
+	display: flex;
+	text-align: center;
+}
+.container {
+	width: 60%;
+	padding: 10px 60px;
+	align-items: center;
+}
+.slide {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	margin-left: 10%;
+}
+.carousel-inner {
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+.footer-todo {
+	width: 100%;
+	background-color: #DC999C;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	.footer-texto {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		display: grid;
+		padding: 1em;
+		.redes {
+			img {
+				display: inline-block;
+				text-decoration: none;
+				width: 30px;
+				height: 30px;
+				line-height: 45px;
+				margin-right: 10px;
+				text-align: center;
+			}
+		}
+	}
+	.box {
+		h2 {
+			margin-bottom: 25px;
+			font-size: 15px;
+		}
+	}
+}
+.contenedor {
+	margin: 0;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: auto wrap auto;
+	width: 100%;
+}
+.card {
+	height: 400px;
+	margin: auto;
+	padding: 30px;
+	min-height: 200px;
+	display: block;
+	position: relative;
+	background-color: #DC999C;
+	border-color: black;
+}
+.card-text {
+	padding: 0 1rem;
+	font-size: 16px;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+}
+.pasteleria-cards {
+	text-align: center;
+}
